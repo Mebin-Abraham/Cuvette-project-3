@@ -13,7 +13,7 @@ function deleteNum(){
 // for calculate the number =
 function calculate(){
     try{
-        Result.value = parseFloat(eval(Result.value)).toFixed(3); 
+        Result.value = eval(Result.value).toFixed(3); 
     }
 
     catch(error)
