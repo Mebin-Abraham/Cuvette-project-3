@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalCulator</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Delius+Unicase:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,800;1,14..32,800&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>calc</h1>
+
+      <form class="screen">
+        <input type="text" class="input-screen" id="result" placeholder="0" />
+      </form>
+
+      <div class="calc-button">
+        <button onclick="insertNum('7')" type="button" class="number">7</button>
+        <button onclick="insertNum('8')" type="button" class="number">8</button>
+        <button onclick="insertNum('9')" type="button" class="number">9</button>
+        <button onclick="deleteNum()" type="button" id="delete">DEL</button>
+
+        <button onclick="insertNum('4')" type="button" class="number">4</button>
+        <button onclick="insertNum('5')" type="button" class="number">5</button>
+        <button onclick="insertNum('6')" type="button" class="number">6</button>
+        <button onclick="insertNum('+')" type="button" class="number">+</button>
+
+        <button onclick="insertNum('1')" type="button" class="number">1</button>
+        <button onclick="insertNum('2')" type="button" class="number">2</button>
+        <button onclick="insertNum('3')" type="button" class="number">3</button>
+        <button onclick="insertNum('-')" type="button" class="number">-</button>
+
+        <button onclick="insertNum('.')" type="button" class="number">.</button>
+        <button onclick="insertNum('0')" type="button" class="number">0</button>
+        <button onclick="insertNum('/')" type="button" class="number">/</button>
+        <button onclick="insertNum('*')" type="button" class="number">x</button>
+
+        <button onclick="allReset()" type="button" id="reset">RESET</button>
+        <button onclick="calculate()" type="button" id="equal">=</button>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="calculator.js"></script>
+  </body>
+</html>
