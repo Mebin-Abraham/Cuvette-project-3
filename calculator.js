@@ -19,7 +19,7 @@ function calculate(){
     catch(error)
     {
        Result.value = "error";
-            setTimeout(() => (textarea.value = ""), 600);
+            setTimeout(() => (Result.value = ""), 600);
 
     }
 }
